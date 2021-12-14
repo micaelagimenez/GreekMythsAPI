@@ -9,7 +9,7 @@ api = Api(app)
 #get all the data
 class Gods(Resource):
     def get(self):
-        data = pd.read_csv('C:/Users/Lenovo/Documents/Project/myth/greek_gods.csv')  # read CSV
+        data = pd.read_csv('https://github.com/micaelagimenez/GreekMythsAPI/blob/main/greek_gods.csv')  # read CSV
         data = data.to_dict()  # convert dataframe to dictionary
         return {'data': data}, 200  # return data and 200 OK code
 
@@ -17,7 +17,7 @@ class Gods(Resource):
 class Search(Resource):
     def __init__(self):
         # read csv file
-        self.data = pd.read_csv('C:/Users/Lenovo/Documents/Project/myth/greek_gods.csv')
+        self.data = pd.read_csv('https://github.com/micaelagimenez/GreekMythsAPI/blob/main/greek_gods.csv')
 
     def get(self, name):
         name_cap = name.capitalize()
@@ -29,7 +29,7 @@ class Search(Resource):
 class Type(Resource):
     def __init__(self):
         # read csv file
-        self.data = pd.read_csv('C:/Users/Lenovo/Documents/Project/myth/greek_gods.csv')
+        self.data = pd.read_csv('https://github.com/micaelagimenez/GreekMythsAPI/blob/main/greek_gods.csv')
 
     def get(self, type):
         data_type = self.data.loc[self.data['main-type'] == type].to_dict()
