@@ -11,11 +11,11 @@ This API can be used via HTTP protocol. Send a GET request to any of the paths b
 | **/gods/** | Retrieve a list of all available data|
 | **/gods/<string:name>** | Retrieve any of the gods, titans or creatures by either their English or Greek names|
 | **/<string:type>** | Retrieve data depending on type: god, titan, creature|
-|
+
 
 #### Example
 
-1. Request: Information about Apollo by it's English name
+Request: Information about Apollo by it's English name
 
 ``/gods/apollo``
 
