@@ -15,7 +15,7 @@ This API can be used via HTTP protocol. Send a GET request to any of the paths b
 
 #### Example
 
-Request: Information about Apollo by it's English name
+Request: Information about Apollo by it's English or Greek name
 
 ``/gods/apollo`` or ``/gods/Ἀπόλλων``
 
