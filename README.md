@@ -3,6 +3,9 @@ Flask API that allows you query information from Greek Mythology's gods, titans 
 
 The database was taken from <a href="https://www.kaggle.com/katrinaalaimo/list-of-greek-gods-and-goddesses/version/1">Kaggle</a>.
 
+### How to use
+Download the files and access its folder through the terminal. Run the python file and access the local server with any of the endpoints to get the desired response.
+
 ### Commands
 This API can be used via HTTP protocol. Send a GET request to any of the paths below to receive a JSON response.
 
